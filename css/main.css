@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment        
+        - Color
+        - Size
+
+/*--------------------------------------------------------------
+3.0 -GENERIC 
+-------------------------------------------------------------- */
+html {
+	font-size: 1rem;
+	font-family: 'Inter', sans-serif;
+}
+
+
+
+/*--------------------------------------------------------------
+4.0 - ELEMENTS 
+-------------------------------------------------------------- */
+/*--TYPOGRAPHY--*/
+
+h1 {
+	font-size:3.5rem;
+	line-height: 1.25em;
+	margin-top: 1em;
+	margin-bottom:.5em;
+	font-family: 'Playfair Display', serif;
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: .75em;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	font-family: 'Playfair Display', serif;
+}
+
+
+p {
+	font-size: .95rem;
+	line-height: 1.75em;
+	margin-bottom: .75em;
+}
+
+header p {
+	margin-top:.25em;
+	margin-bottom: 1em;
+}
+
+aside p, header p {
+	font-size:.75rem;
+	line-height: 2em;
+} 
+
+aside {
+	float: right;
+	width: 320px;
+	padding: 20px;
+}
+
+li {
+	padding: 10px;
+}
+
+#because  {
+	float: left;
+	
+}
+/*--------------------------------------------------------------
+5.0 - OBJECTS
+-------------------------------------------------------------- */
+/*FRAMEWORK*/
+
+
+
+
+
+@media screen and (min-width:768px){
+	
+html {
+		font-size: 1.3rem;
+	}
+	
+.wrapper {
+		width: 75%;
+}
+	
+h1 {
+		font-size: 3.5rem;
+		line-height: 1.25em;
+		margin-top: 1.5em;
+		margin-bottom: .5em;
+}
+}
+	
+@media screen and (min-width:1024px) {
+
+html {
+		font-size: 1.2rem;
+	}
+	
+.wrapper {
+		width: 50%;
+}
+	
+h1 {
+		font-size: 3rem;
+		margin-top: 1em;
+}
+	
+}
+
+
+
